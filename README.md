@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Google Photos Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Google Photos Clone built with ReactJs🚀 and Firebase🔥
 
-## Available Scripts
+**Click [Here](https://photos-clone.web.app/) to View the Website**
 
-In the project directory, you can run:
+### Features
 
-### `npm start`
+- Google Login
+- Upload multiple Photos at once
+- Create new Album
+- Delete Photos and Albums
+- Download Photos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Preview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="./public/preview.gif" />
 
-### `npm test`
+### Technology Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** (FrontEnd)
+  - **Material-UI**
+  - **react-router-dom**
+  - **Redux**
+- **Firebase** - Baas (Backend as a Service)
+  - **Firestore**
+  - **Authentication** (Google Authentication)
+  - **Cloud Storage**
 
-### `npm run build`
+### To run this on Local machine
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clone the repo, and cd into it
+- Install all the dependcies from package.json
+- Create a firebase project and enable Google login
+- Create a file **src/firebase.js** and place firebase project Keys inside as shown in [src/firebase.example.js](https://github.com/mani-barathi/Google-Photos-Clone/blob/master/src/firebase.example.js)
+- Run app by typing `npm start` in command line
+- Make sure to read the **Note** section below
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Note
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- All the functions which does the database transactions are created in a custom hook and imported into components. Check `src\hooks\useFirestore.js`
+- You will have to create **Indexes** in firestore, as HomePage, AlbumPage uses **Nested Queries** to fetch data from Firestore. While running the application for first time there will be an error in console stating you to create an Index in Firestore. That Error will provide a link to create an Index in Firestore , you can click on the link and create an Index. (This Error will be solved after that particular Index is created)
+- To Download Photo diretly from firebase storage in javacript as a **Blob** type, you have to change **CORS** policy in **google cloud console**, to know more check the below links
+  - [Firebase Docs](https://firebase.google.com/docs/storage/web/download-files)
+  - [StackOverFlow Answers](https://stackoverflow.com/questions/37760695/firebase-storage-and-access-control-allow-origin)
