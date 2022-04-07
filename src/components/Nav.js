@@ -4,8 +4,8 @@ import {
   IconButton,
   Snackbar,
   Tooltip,
-  Typography,
 } from "@material-ui/core";
+import logo from "../img/logo.svg";
 import PublishIcon from "@material-ui/icons/Publish";
 import SearchIcon from "@material-ui/icons/Search";
 import React, { useRef, useState } from "react";
@@ -56,16 +56,7 @@ function Nav() {
   return (
     <div className="nav">
       <div className="nav__logo" onClick={goToHomePage}>
-        <Typography variant="h5">
-          <span style={{ color: "#4285F4" }}>G</span>
-          <span style={{ color: "#DB4437" }}>o</span>
-          <span style={{ color: "#F4B400" }}>o</span>
-          <span style={{ color: "#4285F4" }}>g</span>
-          <span style={{ color: "#0F9D58" }}>l</span>
-          <span style={{ color: "#DB4437" }}>e</span>
-          &nbsp;
-          <span className="nav__logoText2">Photos</span>
-        </Typography>
+        <img src={logo} width='200' alt=""></img>
       </div>
 
       <div className="nav_search">
@@ -119,3 +110,4 @@ function Nav() {
 }
 
 export default Nav;
+
