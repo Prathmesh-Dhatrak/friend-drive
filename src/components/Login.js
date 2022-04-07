@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Button, CircularProgress } from "@material-ui/core";
-
+import logo from "../img/logo.svg";
 import { setUser } from "../actions";
 import { auth, provider } from "../firebase";
 import { onAuthStateChanged, signInWithPopup } from "firebase/auth";
@@ -35,10 +35,7 @@ function Login() {
         <CircularProgress />
       ) : (
         <>
-          <img
-            src="https://www.google.com/photos/about/static/images/ui/logo-photos.png"
-            alt=""
-          />
+          <img src={logo} alt="" />
           <Button onClick={login} variant="contained" color="primary">
             Sign In With Google
           </Button>
@@ -56,3 +53,4 @@ const styles = {
 };
 
 export default Login;
+
