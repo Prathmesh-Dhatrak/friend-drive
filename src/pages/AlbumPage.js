@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../css/HomePage.css";
+import "../css/HomePage.scss";
 import Photo from "../components/Photo";
 
 import { useSelector } from "react-redux";

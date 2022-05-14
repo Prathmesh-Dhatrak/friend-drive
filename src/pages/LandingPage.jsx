@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import logo from "../img/MainLogo.png";
 import { Link } from "react-router-dom";
-import "../css/Landing.css";
+import "../css/Landing.scss";
 
 const Landing = () => {
   const fetchers = useRef(null);
@@ -10,7 +10,7 @@ const Landing = () => {
   const fetchersScroll = () => fetchers.current.scrollIntoView();
   // const UseScroll = () => Use.current.scrollIntoView();
   return (
-    <div>
+    <div className="landing-page">
       {/* <Link to={"/login"}>login</Link> */}
       <header>
         <h2>
