@@ -154,8 +154,7 @@ const Landing = () => {
 
       <footer>
         <p>
-          Made by{" "}
-          <Link to="https://prathmeshdhatrak.com/">Prathmesh Dhatrak</Link>
+          Made by <a href="https://prathmeshdhatrak.com/">Prathmesh Dhatrak</a>
         </p>
         <p>
           A fun and easy-to-use Drive space web application build in ReactJS
@@ -163,19 +162,19 @@ const Landing = () => {
         </p>
         <ul>
           <li>
-            <Link to="https://twitter.com/PrathmeshSanto2">
+            <a href="https://twitter.com/PrathmeshSanto2">
               <i className="fa fa-twitter-square fa-2x"></i>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://github.com/Prathmesh-Dhatrak">
+            <a href="https://github.com/Prathmesh-Dhatrak">
               <i className="fa fa-github-square fa-2x"></i>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://www.instagram.com/hellioncoder/">
+            <a href="https://www.instagram.com/hellioncoder/">
               <i className="fa fa-instagram fa-2x"></i>
-            </Link>
+            </a>
           </li>
         </ul>
       </footer>
