@@ -36,7 +36,7 @@ const Landing = () => {
         <div className="hero-content-area">
           <h1>Life is a party!</h1>
           <h3>Capture moments in photos and store it on Friend Drive</h3>
-          <Link to="/" className="btn">
+          <Link to="/login" className="btn">
             Get started
           </Link>
         </div>
