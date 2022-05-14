@@ -5,10 +5,10 @@ import "../css/Landing.css";
 
 const Landing = () => {
   const fetchers = useRef(null);
-  const Use = useRef(null);
+  // const Use = useRef(null);
 
   const fetchersScroll = () => fetchers.current.scrollIntoView();
-  const UseScroll = () => Use.current.scrollIntoView();
+  // const UseScroll = () => Use.current.scrollIntoView();
   return (
     <div>
       {/* <Link to={"/login"}>login</Link> */}
@@ -22,9 +22,9 @@ const Landing = () => {
           <li>
             <button onClick={fetchersScroll}>Fetchers</button>
           </li>
-          <li>
+          {/* <li>
             <button onClick={UseScroll}>Use</button>
-          </li>
+          </li> */}
           <li>
             <Link to="/login">Login</Link>
           </li>
@@ -35,14 +35,14 @@ const Landing = () => {
         <div className="background-image"></div>
         <div className="hero-content-area">
           <h1>Life is a party!</h1>
-          <h3>Unmissable Adventure Tours With Your Friends</h3>
+          <h3>Capture moments in photos and store it on Friend Drive</h3>
           <Link to="/" className="btn">
-            Contact Us Now
+            Get started
           </Link>
         </div>
       </section>
 
-      <section className="destinations">
+      {/* <section className="destinations">
         <h3 className="title">Some of our destinations:</h3>
         <p>
           Tired of the beach alone? Are the plains too plain? Come along with us
@@ -57,57 +57,63 @@ const Landing = () => {
           <li className="large image-3"></li>
           <li className="small image-4"></li>
         </ul>
-      </section>
+      </section> */}
 
       <section ref={fetchers} className="packages">
-        <h3 className="title">Tour Packages</h3>
+        <h3 className="title">Quality features</h3>
         <p>
-          We offer a variety of group (minimum 5 people) packages. Whether
-          you've spent some summers together or this might be your first
-          adventure, we've got the perfect vacation for you.
+          A fun and easy-to-use Drive space web application build in ReactJS
+          where you can store Photos.
         </p>
         <hr />
 
         <ul className="grid">
           <li>
-            <i className="fa fa-compass fa-4x"></i>
-            <h4>Guided Trips</h4>
-            <p>
+            <h4>Easy SignIn with Google</h4>
+            {/* <p>
               Looking for the complete experience? Take a tour with one of our
               experts. They'll show you secrets that you're likely to miss
               otherwise.
-            </p>
+            </p> */}
           </li>
           <li>
-            <i className="fa fa-camera-retro fa-4x"></i>
-            <h4>Photo Trips</h4>
-            <p>
+            {/* <i className="fa fa-camera-retro fa-4x"></i> <i class="fa-solid fa-folder-image fa-4x"></i>*/}
+            <h4>Upload multiple Photos</h4>
+            {/* <p>
               Want to experience nature's beauty without all of that annoying
               exercise? Take a photo tour on one of our{" "}
               <em>Life is a party!</em> buses.
-            </p>
+            </p> */}
           </li>
           <li>
-            <i className="fa fa-bicycle fa-4x"></i>
-            <h4>Biking Trips</h4>
-            <p>
+            {/* <i className="fa fa-bicycle fa-4x"></i> */}
+            <h4>Create new Album</h4>
+            {/* <p>
               If bicycles are more your speed, consider taking a tour through
               one of our mountain or city bike paths. We'll provide the bikes,
               and lunch too!
-            </p>
+            </p> */}
           </li>
           <li>
-            <i className="fa fa-flag-checkered fa-4x"></i>
-            <h4>Racing Trips</h4>
-            <p>
+            {/* <i className="fa fa-flag-checkered fa-4x"></i> */}
+            <h4>Delete Photos / Albums</h4>
+            {/* <p>
               Got a competitive spirit? Sign up for one of our challenge-based
               marathons! Try to reach the summit before any other group.
-            </p>
+            </p> */}
+          </li>
+          <li>
+            {/* <i className="fa fa-flag-checkered fa-4x"></i> */}
+            <h4>Download Photos</h4>
+            {/* <p>
+              Got a competitive spirit? Sign up for one of our challenge-based
+              marathons! Try to reach the summit before any other group.
+            </p> */}
           </li>
         </ul>
       </section>
 
-      <section className="testimonials" ref={Use}>
+      {/* <section className="testimonials" >
         <h3 className="title">Testimonials from our adventurers:</h3>
         <hr />
         <p className="quote">
@@ -129,15 +135,13 @@ const Landing = () => {
           in the sunset, woah. You know? It's like that.
         </p>
         <p className="author">- Luis Mendoza</p>
-      </section>
+      </section> */}
 
-      <section className="contact">
+      {/* <section className="contact">
         <h3 className="title">Learn more</h3>
         <p>
-          Want to know about our upcoming events, or come to one of our mixers?
-          Just sign up for our mailing list. No spam from us, we promise! Except
-          for the spam we give you to keep up your energy while you're having
-          fun with your friends. Have a blast! We have tons of that.
+          A fun and easy-to-use Drive space web application build in ReactJS
+          where you can store Photos.
         </p>
         <hr />
         <form>
@@ -146,30 +150,31 @@ const Landing = () => {
             Subscribe now
           </Link>
         </form>
-      </section>
+      </section> */}
 
       <footer>
         <p>
-          Images courtesy of <Link to="http://unsplash.com/">unsplash</Link>.
+          Made by{" "}
+          <Link to="https://prathmeshdhatrak.com/">Prathmesh Dhatrak</Link>
         </p>
         <p>
-          Why are you even reading this?! There's never anything interesting in
-          the footer!
+          A fun and easy-to-use Drive space web application build in ReactJS
+          where you can store Photos.
         </p>
         <ul>
           <li>
-            <Link to="/">
+            <Link to="https://twitter.com/PrathmeshSanto2">
               <i className="fa fa-twitter-square fa-2x"></i>
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <i className="fa fa-facebook-square fa-2x"></i>
+            <Link to="https://github.com/Prathmesh-Dhatrak">
+              <i className="fa fa-github-square fa-2x"></i>
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <i className="fa fa-snapchat-square fa-2x"></i>
+            <Link to="https://www.instagram.com/hellioncoder/">
+              <i className="fa fa-instagram fa-2x"></i>
             </Link>
           </li>
         </ul>
