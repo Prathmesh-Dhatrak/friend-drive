@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../css/HomePage.css";
+import "../css/HomePage.scss";
 import Album from "../components/Album";
 import Photo from "../components/Photo";
 import CreateAlbumModal from "../components/CreateAlbumModal";

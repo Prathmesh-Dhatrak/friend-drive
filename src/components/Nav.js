@@ -12,7 +12,7 @@ import React, { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setUser } from "../actions";
-import "../css/Nav.css";
+import "../css/Nav.scss";
 import { auth } from "../firebase";
 import { signOut } from "firebase/auth";
 import { uploadPhoto } from "../api/photo";

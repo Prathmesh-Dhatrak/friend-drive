@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Photo.css";
+import "../css/Photo.scss";
 
 import { Tooltip } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
