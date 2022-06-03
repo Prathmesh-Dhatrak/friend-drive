@@ -1,14 +1,16 @@
-# Friend Drive
+# Friend Drive - Photos Dirve
 
-A Friend Drive built with ReactJs🚀 and Firebase🔥
+A fun and easy to use Drive space where you can store Photos.
+
+Link -: [friend-drive.prathmeshdhatrak.com](https://friend-drive.prathmeshdhatrak.com/)
 
 ### Features
 
-- Google Login
-- Upload multiple Photos at once
-- Create new Album
-- Delete Photos and Albums
-- Download Photos
+Easy SignIn with Google, 
+Upload multiple Photos, 
+Create new Album, 
+Delete Photos / Albums, 
+Download Photos, 
 
 
 ### Technology Used
@@ -22,11 +24,12 @@ A Friend Drive built with ReactJs🚀 and Firebase🔥
   - **Authentication** (Google Authentication)
   - **Cloud Storage**
 
-### To run this on Local machine
+## Steps to run frontend
 
-- Clone the repo, and cd into it
-- Install all the dependcies from package.json
-- Create a firebase project and enable Google login
-- Create a file **src/firebase.js** and place firebase project Keys inside.
-- Run app by typing `npm start` in command line
-- Make sure to read the **Note** section below
+### Clone project
+### `yarn install`
+### `yarn start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
