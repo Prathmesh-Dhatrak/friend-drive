@@ -5,9 +5,8 @@ import Nav from "./components/Nav.js";
 import Login from "./components/Login.js";
 import HomePage from "./pages/HomePage.js";
 import AlbumPage from "./pages/AlbumPage.js";
-import Landing from "./pages/LandingPage"
-
-
+import MaintPage from "./pages/maintPage";
+// import Landing from "./pages/LandingPage";
 
 function App() {
   const user = useSelector((state) => state.user);
@@ -24,7 +23,8 @@ function App() {
           </>
         ) : (
           <Routes>
-            <Route exact path="/" element={<Landing />} />
+            <Route exact path="/" element={<MaintPage />} />
+            {/* <Route exact path="/" element={<Landing />} /> */}
             <Route exact path="/login" element={<Login />} />
           </Routes>
         )}

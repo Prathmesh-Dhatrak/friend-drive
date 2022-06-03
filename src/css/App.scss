@@ -3,9 +3,45 @@ html {
 }
 .app {
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+// maintPage
+body {
+  background-color: #e84c3d;
+  text-align: center;
+  padding: 150px;
+}
+h1 {
+  font-size: 50px;
+}
+body {
+  font: 20px Helvetica, sans-serif;
+  color: #fff;
+}
+#img360 {
+  border-radius: 100px;
+  margin-left: 0px;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
